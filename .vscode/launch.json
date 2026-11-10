@@ -1,0 +1,48 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch EV ChargeHub (JavaFX Desktop App)",
+            "request": "launch",
+            "mainClass": "com.evchargehub.Main",
+            "cwd": "${workspaceFolder}",
+            "javaExec": "C:/Program Files/Java/jdk-26.0.1/bin/java.exe",
+            "vmArgs": "--module-path \"${workspaceFolder}/lib/javafx-sdk-21.0.2/lib\" --add-modules javafx.controls,javafx.base,javafx.graphics --enable-native-access=ALL-UNNAMED",
+            "classPaths": [
+                "${workspaceFolder}/bin",
+                "${workspaceFolder}/lib/sqlite-jdbc-3.45.2.0.jar",
+                "${workspaceFolder}/lib/slf4j-api.jar",
+                "${workspaceFolder}/lib/slf4j-simple.jar",
+                "${workspaceFolder}/lib/javafx-sdk-21.0.2/lib/javafx.base.jar",
+                "${workspaceFolder}/lib/javafx-sdk-21.0.2/lib/javafx.controls.jar",
+                "${workspaceFolder}/lib/javafx-sdk-21.0.2/lib/javafx.graphics.jar",
+                "${workspaceFolder}/lib/javafx-sdk-21.0.2/lib/javafx.fxml.jar"
+            ]
+        },
+        {
+            "type": "java",
+            "name": "Run Backend Integration Verification",
+            "request": "launch",
+            "mainClass": "com.evchargehub.BackendTest",
+            "cwd": "${workspaceFolder}",
+            "javaExec": "C:/Program Files/Java/jdk-26.0.1/bin/java.exe",
+            "classPaths": [
+                "${workspaceFolder}/bin",
+                "${workspaceFolder}/lib/*"
+            ]
+        },
+        {
+            "type": "java",
+            "name": "Run Concurrency & Double-Booking Test",
+            "request": "launch",
+            "mainClass": "com.evchargehub.ConcurrencyTest",
+            "cwd": "${workspaceFolder}",
+            "javaExec": "C:/Program Files/Java/jdk-26.0.1/bin/java.exe",
+            "classPaths": [
+                "${workspaceFolder}/bin",
+                "${workspaceFolder}/lib/*"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+# Compiled Class files
+bin/
+*.class
+
+# Documentation & Report files
+*.docx
+*.pdf
+*.pptx
+reports/
+
+# Temporary and cache files
+*.tmp
+*.bak
+__pycache__/
+*.pyc
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+.DS_Store
+
+# Log files
+*.log
